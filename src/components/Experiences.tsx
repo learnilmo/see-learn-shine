@@ -26,7 +26,8 @@ const experiences = [
     ],
     images: [skeletonPreview, skeletonPreview, skeletonPreview],
     color: "primary" as const,
-    url: "https://8th.io/q6tdw",
+    url: "https://ilmo-humanskele.netlify.app",
+    ar: "https://8th.io/q6tdw",
   },
   {
     id: "cell",
@@ -41,7 +42,8 @@ const experiences = [
     ],
     images: [cellPreview, cellPreview, cellPreview],
     color: "accent" as const,
-    url: "https://example.com/cell",
+    url: "https://ilmo-animalcell.netlify.app",
+    ar: "",
   },
   {
     id: "solar-system",
@@ -56,7 +58,8 @@ const experiences = [
     ],
     images: [solarSystemPreview, solarSystemPreview, solarSystemPreview],
     color: "support" as const,
-    url: "https://8th.io/984ft",
+    url: "https://ilmo-solarsystem.netlify.app",
+    ar: "https://8th.io/984ft",
   },
   {
     id: "motor",
@@ -71,7 +74,8 @@ const experiences = [
     ],
     images: [motorPreview, motorPreview, motorPreview],
     color: "primary" as const,
-    url: "https://example.com/motor",
+    url: "",
+    ar: "",
     comingSoon: true,
   },
 ];
@@ -261,7 +265,7 @@ const Experiences = () => {
                       className={`flex-1 border-2 border-white bg-transparent hover:bg-white/10 ${
                         exp.color === "primary" ? "text-white" : "text-foreground"
                       }`}
-                      onClick={() => handleStart(exp)}
+                      onClick={() => window.open(exp.ar, '_blank')}
                     >
                       <Smartphone className="w-4 h-4 mr-1.5" />
                       Try in AR
