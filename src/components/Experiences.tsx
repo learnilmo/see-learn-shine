@@ -26,7 +26,7 @@ const experiences = [
     ],
     images: [skeletonPreview, skeletonPreview, skeletonPreview],
     color: "primary" as const,
-    url: "https://ilmo-humanskele.netlify.app",
+    url: "https://ilmo-humanskeleton.netlify.app",
     ar: "https://8th.io/q6tdw",
   },
   {
